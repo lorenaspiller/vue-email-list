@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- vue cdn developers -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- /vue cdn developers -->
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&display=swap" rel="stylesheet">
+    <!-- /google font -->
+
+    <!-- axios cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+    <!-- /axios cdn -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>E-mail list</title>
+  </head>
+  <body>
+
+    <div id="email-list" class="mails">
+      <h1>e-mail list</h1>
+      <ol v-if="mail">
+        <li v-for="(mail, index) in emailList">{{mail}}</li>
+      </ol>
+    </div>
+
+
+    <!-- javascript link -->
+    <script src="js/script.js" charset="utf-8"></script>
+    <!-- /javascript link -->
+
+  </body>
+</html>

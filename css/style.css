@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Fira Mono', monospace;
+}
+
+.mails {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+.mails ol li {
+  padding: 10px 0;
+}
